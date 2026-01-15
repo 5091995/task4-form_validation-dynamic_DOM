@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 4 - Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <button onclick="showPage('home')">Home</button>
+    <button onclick="showPage('register')">Register</button>
+</nav>
+
+<!-- HOME PAGE -->
+<section id="home" class="page">
+    <h1>Welcome</h1>
+    <p>This page changes without reloading.</p>
+</section>
+
+<!-- REGISTER PAGE -->
+<section id="register" class="page hidden">
+    <h1>Registration Form</h1>
+
+    <form id="registerForm">
+        <label>Email:</label>
+        <input type="email" id="email">
+        <span class="error" id="emailError"></span>
+
+        <label>Password:</label>
+        <input type="password" id="password">
+        <span class="error" id="passwordError"></span>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <p id="successMessage"></p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
